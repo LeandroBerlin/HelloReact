@@ -1,24 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import Logo from './components/Logo'
+import Message from './components/Message'
+
 class App extends Component {
+
+  //Create empty state (we want to see "Marta" - look at the code in Component Messge)
+  state = { name: "" }
+
+  // Update the state with the new name while typing
+  updateUsername = (e) => {
+    this.setState({ name: e.target.value });
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <Logo />
+          <Message name={this.state.name} />
+          { /* When input changes call the function */}
+          <input type="text" id="name" onChange={this.updateUsername} />
         </header>
       </div>
     );

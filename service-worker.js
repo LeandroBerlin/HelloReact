@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/LeandroDCI/HelloReact/precache-manifest.5425d03b8f3ede00f126ff498989b0d2.js"
+  "/HelloReact/precache-manifest.781124ab09aa6ce6ee77ab832c5f2508.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/LeandroDCI/HelloReact/index.html", {
+workbox.routing.registerNavigationRoute("/HelloReact/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

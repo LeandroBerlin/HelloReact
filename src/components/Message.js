@@ -8,7 +8,7 @@ export default class Message extends React.Component {
         return (
             <div>
                 <p>
-                    Hello Word <code>{this.props.name || "Marta"}</code>.
+                    Hello Word <code>{this.props.name || "React"}</code>!
                 </p>
                 <a
                     className="App-link"
@@ -16,7 +16,7 @@ export default class Message extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Learn React
+                    Whant more? Learn React
                 </a>
             </div>
         )
